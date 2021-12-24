@@ -25,28 +25,28 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "01e7a9b8-d93c-43a5-a99a-77237a3fd3f2",
-                    "path": "<Keyboard>/space",
+                    "id": "3e86d722-ac88-4477-b2a5-cc589a7c124b",
+                    "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Keyboard1",
                     "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "c3c83fb5-7609-4172-a3f5-00d4f774934f",
-                    "path": "<Gamepad>/dpad/up",
+                    "id": "fccf30e5-33ed-4249-bd7f-5dbb1f93def6",
+                    "path": "<Keyboard>/upArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Controller",
+                    "groups": "Keyboard2",
                     "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "WASD",
+                    "name": "Player1",
                     "id": "f8080334-2c59-45b3-a7d1-93a56ab554dd",
                     "path": "2DVector",
                     "interactions": "",
@@ -79,15 +79,37 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "",
-                    "id": "9f392911-b116-41a7-b570-80fff793a5b4",
-                    "path": "<Gamepad>/leftStick",
+                    "name": "Player2",
+                    "id": "c82b800f-afea-42a7-8fec-f4596d3378e3",
+                    "path": "2DVector",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Controller",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "left",
+                    "id": "042cab66-883b-4d62-a9f3-0b15eaacff36",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard2",
                     "action": "Movement",
                     "isComposite": false,
-                    "isPartOfComposite": false
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "2c9a03b1-6a53-4cd0-87b0-b10c4359e965",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard2",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
                 }
             ]
         }
@@ -105,11 +127,11 @@
             ]
         },
         {
-            "name": "Controller",
-            "bindingGroup": "Controller",
+            "name": "Keyboard2",
+            "bindingGroup": "Keyboard2",
             "devices": [
                 {
-                    "devicePath": "<WebGLGamepad>",
+                    "devicePath": "<Keyboard>",
                     "isOptional": false,
                     "isOR": false
                 }

@@ -18,9 +18,14 @@ public class PlayerController : MonoBehaviour
     private Vector2 movementInput = Vector2.zero;
     private bool jumped = false;
 
+    [SerializeField]
+    public GameObject playerPrefab;
+
     private void Start()
     {
         controller = gameObject.GetComponent<CharacterController>();
+        var player1 = PlayerInput.Instantiate(prefab: playerPrefab, playerIndex: 0, controlScheme: "Keyboard1", pairWithDevice: Keyboard.current, splitScreenIndex: 0);
+        var player2 = PlayerInput.Instantiate(prefab: playerPrefab, playerIndex: 1, controlScheme: "Keyboard2", pairWithDevice: Keyboard.current, splitScreenIndex: 1);
     }
 
     // Callback function that is called when we trigger the given input
